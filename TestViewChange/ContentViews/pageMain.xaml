@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:contentView="clr-namespace:TestViewChange.ContentViews"
+             x:Class="TestViewChange.ContentViews.pageMain">
+    <Grid ColumnDefinitions="50,*">
+        <Grid RowDefinitions="*,*,*" Grid.Column="0">
+            <Button Text="1" Grid.Row="0" Clicked="Button_Clicked"/>
+            <Button Text="2" Grid.Row="1" Clicked="Button_Clicked_1"/>
+            <Button Text="3" Grid.Row="2" Clicked="Button_Clicked_2"/>
+        </Grid>
+
+        <ContentView x:Name="SecondContent" Grid.Column="1">
+            
+        </ContentView>
+    </Grid>
+</ContentView>
